@@ -1,4 +1,17 @@
 {
-    "clientType":"retail",
-    "products":[]
+    "clientType":"business",
+    "products":[
+        {
+            "id":"A"
+        },
+        {
+            "id":"C"
+        },
+        {
+            "id":"C"
+        },
+        {
+            "id":"E"
+        }
+    ]
 }

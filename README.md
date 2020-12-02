@@ -1,6 +1,6 @@
 # Kata Products Promotions
 ### User story
-As a user I want to able to see all the promotions I have based on the products I own so that I can check if the products I own give me good advantages.
+As a user I want to able to see all the promotions I have, based on the products I own, so that I can check if the products I own give me good advantages.
 
 ### Acceptance criterias
 The mobile team requires an API allowing the application to display the list of promotions a customer have. The endpoint will be a **POST** on **/promotions** with the following payload as an example:

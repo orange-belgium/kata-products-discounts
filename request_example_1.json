@@ -1,0 +1,20 @@
+{
+    "clientType":"retail",
+    "products":[
+        {
+            "id":"A"
+        },
+        {
+            "id":"B"
+        },
+        {
+            "id":"C"
+        },
+        {
+            "id":"C"
+        },
+        {
+            "id":"E"
+        }
+    ]
+}

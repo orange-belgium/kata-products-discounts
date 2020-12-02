@@ -43,7 +43,7 @@ Regarding the products, the company is owning five products identified by:
 
 The company has currently two discounts available: 
 * a first discount identified by **X**
-* a second discount identified by **Z**.
+* a second discount identified by **Y**.
 
 Business has given the following rules:
 * For **retail** clients:

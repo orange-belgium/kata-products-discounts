@@ -1,5 +1,4 @@
 {
-    "clientType":"retail",
     "products":[
         {
             "id":"A"
@@ -14,7 +13,7 @@
             "id":"C"
         },
         {
-            "id":"E"
+            "id":"D"
         }
     ]
 }

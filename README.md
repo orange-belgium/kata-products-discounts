@@ -1,13 +1,12 @@
 # Kata Products Promotions
 ### User story
-As a user I want to able to see all the promotions I have, based on the products I own, so that I can check if the products I own give me good advantages.
+As a user I want to know all the promotions I could have if I take a list of products, so that I can see if the products I might take give me good advantages.
 
 ### Acceptance criterias
-The mobile team requires an API allowing the application to display the list of promotions a customer have. The endpoint will be a **POST** on **/promotions** with the following payload as an example:
+The mobile team requires an API allowing the application to display the list of promotions a customer could have if he takes a list of products. The endpoint will be a **POST** on **/promotions** with the following payload as an example:
 
 ```json
 {
-    "clientType":"retail",
     "products":[
         {
             "id":"A"
@@ -22,33 +21,27 @@ The mobile team requires an API allowing the application to display the list of 
             "id":"C"
         },
         {
-            "id":"E"
+            "id":"D"
         }
     ]
 }
 ```
-
-There are 2 possible types of client: 
-* **retail**
-* **business**
 
 Regarding the products, the company is owning five products identified by:
 * **A**
 * **B**
 * **C**
 * **D**
-* **E**
 
-> **Important note:** a client can only have maximum **one** product A and maximum **one** product B but can have **multiple** products C, D and E.
+> **Important note:** a client can only have maximum **one** product A but can have **multiple** products B, C and D.
 
 The company has currently two discounts available: 
 * a first discount identified by **X**
 * a second discount identified by **Y**.
 
 Business has given the following rules:
-* For **retail** clients:
 
-Has product A | Number of product C and D | Number of product E | Number of discount X | Number of discount Z
+Has product A | Total number of product B and C | Number of product D | Number of discount X | Number of discount Z
 ------------ | ------------- | ------------- | ------------- | -------------
 false |	0	|0	|0	|0
 false	|0|	1|	0	|0
@@ -69,9 +62,7 @@ true|	m>1|	0	|m	|0
 true	|m>1|	1	|m|	1
 true|	m>1	|n>1	|m	|n
 
-* For **business** clients: the same rules as above are applied **EXCEPT** that he needs to have **product A and product B**. If the business client doesn't have product B he is **not eligible to any promotion**.
-
-Mobile team is expecting to receive as a response a list of promotions being given to the customer as well as their **quantity (number of the same promotion being given to the customer)**.
+Mobile team is expecting to receive as a response a list of promotions that could be given to the customer as well as their **quantity (number of the same promotion being given to the customer)**.
 
 The response API contract interface given to the mobile team is the following:
 

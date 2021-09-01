@@ -27,7 +27,7 @@ The mobile team requires an API allowing the application to display the list of 
 }
 ```
 
-Regarding the products, the company is owning five products identified by:
+Regarding the products, the company is owning four products identified by:
 * **A**
 * **B**
 * **C**
